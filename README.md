@@ -1,21 +1,29 @@
 # aditya.utils
 
 __Colorful Console__
+```javascript
+const a = require('aditya.utils')
+a.logblue("TEXT") // Blue Text
+a.logred("TEXT") // Red Text
+a.loggreen("TEXT") // Green Text
+a.logyellow("TEXT") // Yellow Text
+a.logcyan("TEXT") // Cyan text
+``` 
 
-const a = require('aditya.utils')<br>
-a.logblue("TEXT") // Blue Text<br>
-a.logred("TEXT") // Red Text<br>
-a.loggreen("TEXT") // Green Text<br>
-a.logyellow("TEXT") // Yellow Text<br>
-a.logcyan("TEXT") // Cyan text <br><br>
+__Package Version__
+```javascript
+const a = require("aditya.utils")
+a.packageVersion("Package Name") // Returns installed package version.
+```
 __Calculation__ 
 
-const a = require('aditya.utils')<br>
-a.add(1, 2) //  Result - 3<br>
-a.subtract(2, 1) // Result - 1<br>
-a.multiply(2, 2) // Result - 4<br>
-a.divide(4, 2) // Result - 2<br><br>
-
+```javascript
+const a = require('aditya.utils')
+a.add(1, 2) //  Result - 3
+a.subtract(2, 1) // Result - 1
+a.multiply(2, 2) // Result - 4
+a.divide(4, 2) // Result - 2
+```
 **Maintainer**
 
 - [Profile : adityaop2008](https://github.com/adityaop2008 "Aditya")
