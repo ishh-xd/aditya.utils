@@ -15,7 +15,7 @@ __Package Version__
 const a = require("aditya.utils")
 a.packageVersion("Package Name") // Returns installed package version.
 
-a.version // returns aditya.utils version
+a.version() // returns aditya.utils version
 ```
 __Calculation__ 
 
