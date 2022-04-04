@@ -5,6 +5,7 @@ module.exports = {
     divide,
     multiply,
     add,
+  version,
   packageVersion,
     logcyan,
     logred,
@@ -12,6 +13,10 @@ module.exports = {
     loggreen,
     logyellow
 }
+function version() => {
+    return require(`${process.cwd()}/package.json`).dependencies["aditya.utils"] || `Unexpected Error!`;
+  }  
+
 function packageVersion(name) => {
     return require(`${process.cwd()}/package.json`).dependencies[name] || `Package ${name} not found/installed.`
   } 
