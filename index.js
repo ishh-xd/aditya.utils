@@ -1,16 +1,20 @@
-'use strict'; 
+'use strict';
  var c = require('chalk');
 module.exports = {
     subtract,
     divide,
     multiply,
     add,
+  packageVersion,
     logcyan,
     logred,
     logblue, 
     loggreen,
     logyellow
 }
+function packageVersion(name) => {
+    return require(`${process.cwd()}/package.json`).dependencies[name] || `Package ${name} not found/installed.`
+  } 
 
  function logcyan(text) {
   return console.log(c.cyan(text));
