@@ -1,22 +1,26 @@
 {
   "name": "aditya.utils",
-  "version": "6.0.0",
+  "version": "6.0.2",
   "description": "A package to help you with nodejs.",
-  "keywords": ["utils", "chalk", "nodejs"],
-    "homepage": "https://github.com/AdityaOP2008/aditya-utils",
+  "keywords": [],
+  "homepage": "https://github.com/AdityaOP2008/aditya-utils",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "Aditya",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
-    "chalk": "^4.0.0"
+    "chalk": "^4.0.0",
+    "node": "^17.7.2",
+    "pretty-ms": "^7.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdityaOP2008/aditya-utils"
+    "url": "git+https://github.com/AdityaOP2008/aditya-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AdityaOP2008/aditya-utils/issues"
   },
   "devDependencies": {}
 }
