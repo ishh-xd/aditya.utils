@@ -1,9 +1,11 @@
 'use strict';
  var c = require('chalk');
+
 module.exports = {
     subtract,
     divide,
-    multiply,
+   parsems,
+  multiply,
     add,
   version,
   packageVersion,
@@ -13,11 +15,23 @@ module.exports = {
     loggreen,
     logyellow
 }
-function version() => {
+
+function version() {
     return require(`${process.cwd()}/package.json`).dependencies["aditya.utils"] || `Unexpected Error!`;
   }  
 
-function packageVersion(name) => {
+
+function parsems(ms) {
+    if (isNaN(ms)) {
+        return `${ms}, is not an integer!`;
+    }
+    var msop = require("pretty-ms")
+    let a = msop(ms)
+    return a || "Uhmm? Unexpected error occurred!";
+} 
+
+
+function packageVersion(name) {
     return require(`${process.cwd()}/package.json`).dependencies[name] || `Package ${name} not found/installed.`
   } 
 
